@@ -1,0 +1,127 @@
+{
+  "is_456_2000": {
+    "concrete": {
+      "minimum_grade": "M15",
+      "recommended_grade": "M20",
+      "partial_safety_factor": 1.5,
+      "max_stress_factors": {
+        "M15": 0.446,
+        "M20": 0.446,
+        "M25": 0.446,
+        "M30": 0.446,
+        "M35": 0.446,
+        "M40": 0.446
+      }
+    },
+    "steel": {
+      "minimum_grade": "Fe415",
+      "recommended_grade": "Fe500",
+      "partial_safety_factor": 1.15,
+      "development_length_factor": {
+        "Fe415": 47,
+        "Fe500": 58,
+        "Fe550": 64
+      }
+    },
+    "reinforcement": {
+      "minimum_tension_steel_percent": 0.85,
+      "maximum_tension_steel_percent": 4.0,
+      "minimum_shear_steel_percent": 0.4,
+      "minimum_distribution_steel_percent": 0.12
+    },
+    "cover_requirements": {
+      "mild": {
+        "beam": 25,
+        "column": 40,
+        "slab": 20,
+        "footing": 50
+      },
+      "moderate": {
+        "beam": 30,
+        "column": 40,
+        "slab": 25,
+        "footing": 50
+      },
+      "severe": {
+        "beam": 45,
+        "column": 45,
+        "slab": 35,
+        "footing": 75
+      }
+    },
+    "span_depth_ratios": {
+      "cantilever": 7,
+      "simply_supported": 20,
+      "continuous": 26
+    },
+    "member_limits": {
+      "beam": {
+        "minimum_width": 150,
+        "minimum_depth": 200
+      },
+      "column": {
+        "minimum_dimension": 200,
+        "maximum_slenderness_ratio": 60
+      },
+      "slab": {
+        "minimum_thickness": 125,
+        "maximum_spacing": 300
+      },
+      "footing": {
+        "minimum_thickness": 150
+      }
+    },
+    "load_factors": {
+      "dead_load": 1.5,
+      "live_load": 1.5,
+      "wind_load": 1.5,
+      "earthquake_load": 1.5
+    }
+  },
+  "is_875": {
+    "dead_loads": {
+      "concrete_rcc": 25.0,
+      "concrete_plain": 24.0,
+      "brick_masonry": 20.0,
+      "stone_masonry": 25.0,
+      "steel": 78.5,
+      "timber": 6.0
+    },
+    "live_loads": {
+      "residential": {
+        "dwelling_rooms": 2.0,
+        "toilet_bathroom": 2.0,
+        "kitchen": 2.0,
+        "corridor_stair": 3.0,
+        "balcony": 3.0
+      },
+      "commercial": {
+        "office": 3.0,
+        "retail": 4.0,
+        "storage": 5.0,
+        "assembly": 4.0
+      },
+      "industrial": {
+        "light": 5.0,
+        "medium": 7.5,
+        "heavy": 10.0
+      }
+    },
+    "wind_loads": {
+      "basic_wind_speed": {
+        "zone_1": 33,
+        "zone_2": 39,
+        "zone_3": 44,
+        "zone_4": 47,
+        "zone_5": 50,
+        "zone_6": 55
+      },
+      "terrain_factors": {
+        "category_1": 1.0,
+        "category_2": 0.91,
+        "category_3": 0.78,
+        "category_4": 0.71
+      }
+    }
+  }
+}

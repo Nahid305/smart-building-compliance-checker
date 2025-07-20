@@ -1,0 +1,178 @@
+{
+  "concrete_grades": {
+    "M15": {
+      "fck": 15,
+      "density": 24.0,
+      "modulus_of_elasticity": 22360,
+      "max_compressive_stress": 5.0,
+      "applications": ["Plain concrete", "Foundation", "Non-structural"]
+    },
+    "M20": {
+      "fck": 20,
+      "density": 25.0,
+      "modulus_of_elasticity": 25000,
+      "max_compressive_stress": 6.7,
+      "applications": ["RCC beams", "Slabs", "Columns"]
+    },
+    "M25": {
+      "fck": 25,
+      "density": 25.0,
+      "modulus_of_elasticity": 27386,
+      "max_compressive_stress": 8.3,
+      "applications": ["Prestressed concrete", "Heavy construction"]
+    },
+    "M30": {
+      "fck": 30,
+      "density": 25.0,
+      "modulus_of_elasticity": 29580,
+      "max_compressive_stress": 10.0,
+      "applications": ["High-rise buildings", "Industrial structures"]
+    },
+    "M35": {
+      "fck": 35,
+      "density": 25.0,
+      "modulus_of_elasticity": 31623,
+      "max_compressive_stress": 11.7,
+      "applications": ["Prestressed concrete", "Bridges"]
+    },
+    "M40": {
+      "fck": 40,
+      "density": 25.0,
+      "modulus_of_elasticity": 33541,
+      "max_compressive_stress": 13.3,
+      "applications": ["High-strength applications", "Precast elements"]
+    }
+  },
+  "steel_grades": {
+    "Fe415": {
+      "fy": 415,
+      "fu": 485,
+      "density": 78.5,
+      "modulus_of_elasticity": 200000,
+      "applications": ["General construction", "Mild reinforcement"]
+    },
+    "Fe500": {
+      "fy": 500,
+      "fu": 565,
+      "density": 78.5,
+      "modulus_of_elasticity": 200000,
+      "applications": ["High-strength reinforcement", "HYSD bars"]
+    },
+    "Fe550": {
+      "fy": 550,
+      "fu": 585,
+      "density": 78.5,
+      "modulus_of_elasticity": 200000,
+      "applications": ["Special applications", "Heavy construction"]
+    },
+    "Fe600": {
+      "fy": 600,
+      "fu": 660,
+      "density": 78.5,
+      "modulus_of_elasticity": 200000,
+      "applications": ["Ultra high-strength applications"]
+    }
+  },
+  "bar_properties": {
+    "6": {
+      "diameter": 6,
+      "area": 28.27,
+      "weight_per_meter": 0.222,
+      "applications": ["Stirrups", "Distribution bars"]
+    },
+    "8": {
+      "diameter": 8,
+      "area": 50.27,
+      "weight_per_meter": 0.395,
+      "applications": ["Stirrups", "Light reinforcement"]
+    },
+    "10": {
+      "diameter": 10,
+      "area": 78.54,
+      "weight_per_meter": 0.617,
+      "applications": ["Slab reinforcement", "Secondary beams"]
+    },
+    "12": {
+      "diameter": 12,
+      "area": 113.10,
+      "weight_per_meter": 0.888,
+      "applications": ["Beam reinforcement", "Column ties"]
+    },
+    "16": {
+      "diameter": 16,
+      "area": 201.06,
+      "weight_per_meter": 1.578,
+      "applications": ["Main reinforcement", "Beams", "Columns"]
+    },
+    "20": {
+      "diameter": 20,
+      "area": 314.16,
+      "weight_per_meter": 2.466,
+      "applications": ["Heavy reinforcement", "Large beams"]
+    },
+    "25": {
+      "diameter": 25,
+      "area": 490.87,
+      "weight_per_meter": 3.853,
+      "applications": ["Heavy columns", "Transfer beams"]
+    },
+    "32": {
+      "diameter": 32,
+      "area": 804.25,
+      "weight_per_meter": 6.313,
+      "applications": ["Heavy construction", "Large columns"]
+    }
+  },
+  "standard_mixes": {
+    "M15": {
+      "cement": 1,
+      "sand": 2,
+      "aggregate": 4,
+      "water_cement_ratio": 0.6
+    },
+    "M20": {
+      "cement": 1,
+      "sand": 1.5,
+      "aggregate": 3,
+      "water_cement_ratio": 0.5
+    },
+    "M25": {
+      "cement": 1,
+      "sand": 1,
+      "aggregate": 2,
+      "water_cement_ratio": 0.45
+    }
+  },
+  "exposure_conditions": {
+    "mild": {
+      "description": "Concrete surfaces protected against weather or aggressive conditions",
+      "examples": ["Interior of buildings", "Concrete below ground level"],
+      "chloride_limit": 0.4,
+      "cement_content_min": 300
+    },
+    "moderate": {
+      "description": "Concrete surfaces sheltered from severe rain or freezing",
+      "examples": ["Concrete surfaces sheltered from severe rain"],
+      "chloride_limit": 0.3,
+      "cement_content_min": 320
+    },
+    "severe": {
+      "description": "Concrete surfaces exposed to severe conditions",
+      "examples": ["Coastal areas", "Industrial areas"],
+      "chloride_limit": 0.15,
+      "cement_content_min": 360
+    },
+    "very_severe": {
+      "description": "Concrete surfaces exposed to sea water spray",
+      "examples": ["Marine structures", "Tidal zones"],
+      "chloride_limit": 0.1,
+      "cement_content_min": 400
+    },
+    "extreme": {
+      "description": "Concrete surfaces exposed to sea water",
+      "examples": ["Immersed in sea water"],
+      "chloride_limit": 0.05,
+      "cement_content_min": 450
+    }
+  }
+}
