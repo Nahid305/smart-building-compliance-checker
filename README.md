@@ -150,13 +150,13 @@ The application includes comprehensive structural calculation tests:
 ### Python Dependencies
 ```
 streamlit>=1.28.1
-pandas>=1.5.3
-numpy>=1.24.3
-matplotlib>=3.7.1
-plotly>=5.14.1
-reportlab>=4.0.4
-Pillow>=9.5.0
-scipy>=1.10.1
+pandas>=2.1.0
+numpy>=1.25.0
+matplotlib>=3.7.0
+plotly>=5.15.0
+reportlab>=4.0.0
+Pillow>=10.0.0
+scipy>=1.11.0
 ```
 
 ## 🤝 Contributing
